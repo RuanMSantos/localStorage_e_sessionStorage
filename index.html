@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage e SessionStorage</title>
+    <!--<script src="index.js"></script>-->
+    <script src="script.js" defer></script> <!-- defer permite que o html seja carregado antes do js -->>
+</head>
+<body>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">LocalStorage e SessionStorage</h1>
+    <form id="name_form"> <!-- form#name_form forma abreviada de escrever um form com id -->
+        <h2>Preencha o formulário para continuar:</h2>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Por favor digite seu nome..." required>
+        <!-- Requiered é utilizado para garanitr que um dado deve ser preenchido -->
+         <input type="submit" value="Enviar">
+    </form>
+    <div id="welcome">
+        <h2>Seja bem vindo <span id="username"></span></h2>
+        <button id="logout">Sair</button>
+    </div>
+</body>
+</html>
